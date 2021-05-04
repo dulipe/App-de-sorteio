@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>App Sorteio</title>
+</head>
+<body>
+
+    <header>
+        <img src="https://kenzie.com.br/images/st.svg" alt="logo" class="logo">
+        <h1>Sorteio de números</h1>
+    </header>
+
+    <main class="app">
+        <h3>Sortear números</h3>
+        <p>Crie o sorteio de números facilmente utilizando essa opção, você poderá 
+            salvar o sorteio e compartilhar o link com outras pessoas.</p>
+        <hr>
+
+        <label for="selecaoNome">Selecionar o sorteio por nome</label>
+        <input type="checkbox" id="selecaoNome">
+
+        <div class="formulario">
+           
+            <div class="input-model-numeros">
+                <label for="qtdResultados">O resultado terá quantos números?</label>
+                <input type="number" placeholder="2" name="qtdResultados" id="qtdResultados">
+                
+                <label for="inBetweenNumber">Entre</label>
+                <input type="number" placeholder="1" name="inBetweenNumber" id="inBetweenNumber">
+                
+                <label for="andNumber">e</label>
+                <input type="number"  placeholder="10" name="andNumber" id="andNumber">
+            </div>
+
+            <div class="input-model-nomes">
+                <label for="nomes">Adicione os nomes</label>
+                <textarea id="nomes" 
+                placeholder="Adicione os nomes separados por vírgula (João, Maria, José)"></textarea>
+            </div>
+
+            <button id="buttonSortear">Sortear</button>
+            <button id="buttonLimpar">Limpar</button>
+
+            <div class="resultado" id="painelResultado">
+                <span id="btnFecharResultado">X</span>
+                <h3>Resultado:</h3>
+                <p id="resultado">1-2-3-4</p>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
